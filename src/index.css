@@ -5,9 +5,77 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #141414;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.info{
+  background-color: #1f1f1f;
+  width: fit-content;
+  margin: 20px auto;
+  padding: 35px;
+  border-radius: 15px;
+}
+
+.info1{
+
+}
+
+.info1>img{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50px;
+}
+
+.info1>div:first-of-type{
+  display: flex;
+  flex-direction: column;
+  text-transform: capitalize;
+}
+
+.info1>div:first-of-type>span:first-of-type{
+ margin: 10px 0 5px 0;
+ color: white;
+ font-weight: bold;
+ font-size: 1.5rem;
+}
+
+.info1>div:first-of-type>span:last-of-type{
+  /* margin: 5px 0; */
+  color: #c4e94d;
+  font-weight: bold;
+  /* font-size: 1.5rem; */
+ }
+
+.info1>div:last-of-type{
+  margin-top: 10px;
+}
+
+ .info1>div:last-of-type>p{
+    color: whitesmoke;
+ }
+
+.buttons{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.buttons>button{
+  padding: 10px 30px;
+  background-color: #333333;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+}
+
+.buttons>button:hover{
+  background-color: #413f3f;
+  cursor: pointer;
 }
