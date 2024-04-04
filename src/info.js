@@ -1,5 +1,29 @@
 import Image from './photo.jpg';
 
+const buttons = [
+    {
+        name: "Github",
+        link: "https://github.com/sudosantos"
+    },
+    {
+        name: "Frontend Mentor",
+        link: "/"
+    },
+    {
+        name: "LinkedIn",
+        link: "https://linkedin.com/"
+    },
+    {
+        name: "Twitter",
+        link: "https://twitter.com"
+    },
+    {
+        name: "Instagram",
+        link: "https://instagram.com"
+    }
+
+]
+
 const Info = () => {
     return ( 
         <div className="info">
@@ -16,14 +40,19 @@ const Info = () => {
                 </div>
             </div>
             <div className="buttons">
-                <button>Github</button>
+                {/* <button>Github</button>
                 <button>Frontend Mentor</button>
                 <button>LinkedIn</button>
                 <button>Twitter</button>
-                <button>Instagram</button>
+                <button>Instagram</button> */}
+                {buttons.map((button, index) => {
+                    return (
+                        <button key={index} onClick={()=> window.open(button.link, '_blank')}>{button.name} </button>
+                    )
+                })}
             </div>
         </div>
      );
-}
+}   
  
 export default Info;
