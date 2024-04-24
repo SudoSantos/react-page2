@@ -40,11 +40,6 @@ const Info = () => {
                 </div>
             </div>
             <div className="buttons">
-                {/* <button>Github</button>
-                <button>Frontend Mentor</button>
-                <button>LinkedIn</button>
-                <button>Twitter</button>
-                <button>Instagram</button> */}
                 {buttons.map((button, index) => {
                     return (
                         <button key={index} onClick={()=> window.open(button.link, '_blank')}>{button.name} </button>
